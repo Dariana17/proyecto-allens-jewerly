@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lucida Sans', sans-serif;
+  line-height: 1.6;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  padding: 0 20px;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+.logo i {
+  font-size: 22px;
+  color: #030303; 
+}
+
+.logo-shopping {
+font-size: 22px;
+  color: #030303;
+list-style: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.Tarjetas-de-Productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; 
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+
+.tarjeta-p {
+  width: 30%;
+  max-width: 300px;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.tarjeta-p img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-p i {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* carrito dorado */
+.tarjeta-p i:hover {
+  color: #d4af37; 
+}
+
+/* Footer  */
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.tarjeta-p i {
+  background-color: #d4af37; /* dorado */
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.tarjeta-p i:hover {
+  background-color: #b8962e;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #d4af37;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #d4af37;
+  color: black;
+}
+
+ /* Media queries para tablet  */
+
+@media (max-width: 991px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .contenedor-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar li {
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  .Tarjetas-de-Productos {
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 25px;
+    width: 30%;
+  }
+
+  .tarjeta-p {
+    width: 45%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Media queries para celulares  */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar li {
+    padding: 6px 0;
+    font-size: 14px;
+  }
+
+  .imagen-banner {
+    height: auto;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .Tarjetas-de-Productos {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+ width: 100%;
+  }
+
+  .tarjeta-p {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 100% ;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
