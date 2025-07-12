@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body onload="cargarProductos()">
 
    <header>
  <nav class="nav">
@@ -38,13 +38,21 @@
   
     <li><a href="#footer-fin">Contactanos</a></li>
     <div class="logo-shopping">
-  <a href="#carrito">
+  <a id="carrito-icono" href="#carrito">
     <i class="fa-solid fa-cart-shopping"></i>
     <span class="contador" id="contador-carrito">0</span>
   </a>
-<ul id="product-list">
-
-</ul>
+ <!-- Carrito -->
+  <div style="display: none;" id="carrito">
+    <div class="carrito-header">
+      <h2>Carrito</h2>
+      
+    </div>
+    <ul id="lista-carrito"></ul>
+    <p id="total-carrito">Total: $0 ARS</p>
+    <button id="vaciar-carrito">Vaciar carrito</button>
+    <button id="realizar-compra">Realizar compra</button>
+  </div>
   </div>
   </ul>
  
@@ -64,7 +72,7 @@
   <div class="tarjetas-de-productos" id="contenedor-productos"></div>
  
   <!-- Carrito -->
-  <div id="carrito">
+  <!-- <div id="carrito">
     <div class="carrito-header">
       <h2>Carrito</h2>
       <span class="contador" id="contador-carrito">0</span>
@@ -73,7 +81,7 @@
     <p id="total-carrito">Total: $0 ARS</p>
     <button id="vaciar-carrito">Vaciar carrito</button>
     <button id="realizar-compra">Realizar compra</button>
-  </div>
+  </div> -->
 
 
   <!-- Footer -->

@@ -4,7 +4,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin:0;
   background-color: #fefefe;
 }
 
@@ -38,6 +38,7 @@ header {
 .nav > .nav-list {
   display: flex;
   gap: 2rem;
+  position: relative;
 }
 .nav > .nav-list > li {
   list-style-type: none;
@@ -82,9 +83,10 @@ font-size: 22px;
   color: black;
 list-style: none;
 text-decoration: none;
+
 }
 
-.logo-shopping i {
+.logo-shopping a {
   color: black;
   text-decoration: none;
 }
@@ -127,9 +129,30 @@ text-decoration: none;
   object-fit: contain;            
 }
 
+/* .tarjetas-de-productos {
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tarjeta-p {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  flex: 1 1 33.33%;
+} */
+
 .tarjetas-de-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   max-width: 1400px;
   margin: 0 auto;
@@ -140,11 +163,13 @@ text-decoration: none;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
-  width: 200px;
   text-align: center;
   background-color: white;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
 }
+
 
 .tarjeta-p img {
   width: 100%;
@@ -163,6 +188,11 @@ button {
   margin-top: 40px;
   border-top: 2px solid #000;
   padding-top: 20px;
+      display: block;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    left: -1px;
 }
 
 ul {
@@ -215,8 +245,9 @@ footer {
 
 /* Media queries para tablet  */
 
-@media (min-width: 600px) {
-  header {
+/* @media (min-width: 600px) { */
+ @media (max-width: 1024px) and (min-width: 600px) {
+header {
     flex-direction: column;
     padding: 15px;
     text-align: center;
@@ -240,16 +271,16 @@ footer {
   .tarjetas-de-productos {
     justify-content: center;
     padding: 30px 20px;
-    gap: 25px;
+   
    
   }
 
   /* 2 tarjetas por fila */
-    .tarjeta-p {
-    flex: 1 1 48%;    
-    max-width: 48%;
+  .tarjeta-p {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
   } 
- }
 
 
   .footer {
@@ -262,7 +293,7 @@ footer {
 /* Media queries para celulares  */
 
 
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
   header {
     flex-direction: column;
     padding: 10px;
@@ -287,13 +318,14 @@ footer {
 
   /* una tarjeta por fila */
   .tarjetas-de-productos {
-    grid-template-columns: 1fr; 
+flex-wrap: wrap;
     width: 100%;
     padding: 20px;
   }
 
   .tarjeta-p {
-    width: 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .footer {
