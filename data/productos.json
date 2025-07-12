@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nombre": "Anillo doble brillo",
+    "precio": 6000,
+    "imagen": "/imagenes/anillo con brillante.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Anillo ondulado",
+    "precio": 3000,
+    "imagen": "/imagenes/anillo.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Cadena doble",
+    "precio": 10000,
+    "imagen": "/imagenes/cadena doble.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Cadena cruz",
+    "precio": 8000,
+    "imagen": "/imagenes/Collar cruz.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Cadena Sol",
+    "precio": 8500,
+    "imagen": "/imagenes/collar.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Cadena serpiente",
+    "precio": 7000,
+    "imagen": "/imagenes/icon.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Pendientes de Lazo",
+    "precio": 6000,
+    "imagen": "/imagenes/pendientes de lazo.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Pendientes Redondos",
+    "precio": 9000,
+    "imagen": "/imagenes/pendientes redondos.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Pulsera de Corazón",
+    "precio": 5000,
+    "imagen": "/imagenes/pulsera corazon.jpg"
+  }
+]

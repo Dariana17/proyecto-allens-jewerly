@@ -5,7 +5,7 @@
 <title>Allen's Jewerly</title>
 <link rel="icon" href="/imagenes/icon.jpg">
   <link rel="stylesheet" href="style.css">
-   <!-- Font Awesome CDN recomendado -->
+   <!-- Font Awesome iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -40,6 +40,7 @@
     <div class="logo-shopping">
   <a href="#carrito">
     <i class="fa-solid fa-cart-shopping"></i>
+    <span class="contador" id="contador-carrito">0</span>
   </a>
 <ul id="product-list">
 
@@ -53,13 +54,16 @@
 
 
 </header>
+
+<!-- Banner -->
 <div class="imagen-banner">
  <img class="imagen-banner" src="/imagenes/banner-final-2.png" alt="Imagen de inicio"/>
 
 </div>
-
+  <!-- Productos -->
   <div class="tarjetas-de-productos" id="contenedor-productos"></div>
-
+ 
+  <!-- Carrito -->
   <div id="carrito">
     <div class="carrito-header">
       <h2>Carrito</h2>
@@ -68,9 +72,11 @@
     <ul id="lista-carrito"></ul>
     <p id="total-carrito">Total: $0 ARS</p>
     <button id="vaciar-carrito">Vaciar carrito</button>
+    <button id="realizar-compra">Realizar compra</button>
   </div>
 
 
+  <!-- Footer -->
   <footer class="footer" id="footer-fin">
   <div class="footer-section">
     <h4>Métodos de pago</h4>
