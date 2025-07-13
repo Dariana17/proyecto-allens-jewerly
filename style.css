@@ -243,6 +243,26 @@ footer {
   color: #d4af37;
 }
 
+
+.seccion-mapa {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.seccion-mapa h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.contenedor-mapa iframe {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+}
+
 /* Media queries para tablet  */
 
 /* @media (min-width: 600px) { */
